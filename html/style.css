@@ -1,0 +1,86 @@
+
+
+h1 {
+  color:red;
+  background-image: url(./fundos/fundo1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+#primeiro {
+  color: rgba(100,100,255, 0.6)
+}
+
+.texto_azul {
+  color:blue;
+}
+
+#subDiv {
+  background-color: blue;
+}
+
+.cm {
+  background-color: blueviolet;
+  width: 1cm;
+  height: 1cm;
+}
+
+.mm {
+  background-color: blueviolet;
+  width: 1mm;
+  height: 1mm;
+}
+
+.in {
+  background-color: blueviolet;
+  width: 1in;
+  height: 1in;
+}
+
+.pt {
+  background-color: rgb(49, 226, 43);
+  width: 12pt;
+  height: 12pt;
+}
+
+.pc {
+  background-color: rgb(49, 226, 43);
+  width: 1pc;
+  height: 1pc;
+}
+
+.container {
+  font-size: 25px;
+}
+
+.insider {
+  font-size: 2em; /* 2*25px(font-size do container) - 5opx*/
+  width: 1em; /* equivale a 50px porque é relativo ao tamanho da fonte do insider*/
+  background-color:blue;
+  /* 2 vezes o tamanho do container 
+  em é ligado ao tamanho da fonte*/
+  /* rem faz referência a tag raíz -html */
+  /* 1 vw - 1% 50vw 50% da largura da minha janela*/
+  /* 1 vh mexe na altura */
+}
+
+.vmin {
+  width:50vmin;
+  background-color: aquamarine;
+}
+
+/* se o pai tem 200px , e eu uso 50% no filho, o filho fica com 100px*/
+
+.pai {
+  width: 200px;
+  background-color: red;
+}
+
+.filho {
+width: 50%;
+background-color: aquamarine;
+}
+
+

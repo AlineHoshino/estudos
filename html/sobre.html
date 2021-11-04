@@ -3,30 +3,36 @@
   <head>
     <title>Nome que vai na aba da página</title>
     <meta charset="utf-8" />
+   <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <a href="#sol">Sol</a>
     <h1>Título1</h1>
-    <h2>Título2</h2>
+    <h2 >Título2</h2>
     <h3>Título3</h3>
     <h4>Título4</h4>
     <h5>Título5</h5>
     <h6>Título6</h6>
     <!--isso é um comentário
        bold não semantico strong mostra que o texto é semantico-->
-    <p>Esse é um <strong>texto em negrito</strong></p>
+    <div class="container">
+    <p id="primeiro">Esse é um <strong>texto em negrito</strong></p>
     <em>Texto em itálico</em>
     <p><mark>Texto com marcação</mark></p>
-    <p>Esse é um texto com a tag <small>small</small></p>
-    <p> esse é um texto <del>removido</del></p>
+    <p class="texto_azul">Esse é um texto com a tag <small>small</small></p>
+    <p class="texto_azul"> esse é um texto <del>removido</del></p>
     <p> esse é um texto  <ins>inserido</ins></p>
+    <div id="subDiv">
     <p>texto <sub>subscrito</sub></p>
     <p>texto<sup>em cima</sup></p>
+    </div>
+    </div>
     <a href="página.html">Bem vindo</a>
     <br>
     <img src="https://static-cse.canva.com/blob/183499/IMAGE-1.jpg" width="300px" alt="entardecer">
     <br>
     <a href="https://medium.com/revista-subjetiva/entardecer-d34b46c909a2">
-    <img src="https://miro.medium.com/max/5120/1*-dd1AkVVs7YOIbMBunml4A.jpeg" width="100px">
+    <img src="https://miro.medium.com/max/5120/1*-dd1AkVVs7YOIbMBunml4A.jpeg" width="100px" id="sol">
     </a>
     <ul>
       <li>item 1</li>
@@ -59,5 +65,22 @@
         </tr>
       </tbody>
     </table>
+    <div class="cm"></div>
+    <div class="mm"></div>
+    <div class="in"></div>
+    <div class="pt"></div>
+    <div class="pc"></div>
+    <div class="container">
+      texto do container
+      <div class="insider">
+        texto filho do container
+      </div>
+    </div>
+    <p class="vmin">Testando Vmin</p>
+    <div class="pai">pai
+    <div class="filho">
+      filho
+    </div>
+  </div>
   </body>
 </html>
