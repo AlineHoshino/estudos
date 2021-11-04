@@ -1,0 +1,17 @@
+.base {
+  background-color:blue;
+}
+
+.container {
+  background-color: aqua;
+  margin-top: 10px;
+  color:white;
+  padding: 30px;
+  margin-left: 10px;
+}
+
+/* margin faz para todos os lados*/
+/* padding é dentro */
+
+
+
