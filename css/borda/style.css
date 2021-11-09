@@ -1,0 +1,27 @@
+.borda {
+  border-width: 5px;
+  border-style: solid;
+  border-top-color: red;
+  border-radius: 5px;
+}
+
+.quadrado {
+   width: 100px;
+   height:100px;
+   background-color: aqua;
+}
+
+/* border-top-color só a borda de cima fica vermelha 
+Tem a opção rigth, left, bottom para ficar em cada um dos lados*/
+
+.multicolorido {
+  border-width: 5px 2px 3px 4px;
+  border-style: solid;
+  border-color:aqua gray green yellow;
+}
+
+/* jeito mais simples de cirar borda */
+
+.bordasimples {
+  border: 5px dashed blue;
+}
