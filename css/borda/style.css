@@ -25,3 +25,11 @@ Tem a opção rigth, left, bottom para ficar em cada um dos lados*/
 .bordasimples {
   border: 5px dashed blue;
 }
+
+.square {
+  width:100px;
+  height: 100px;
+  box-sizing: border-box;
+  background-color: yellow;
+  padding:20px;
+}

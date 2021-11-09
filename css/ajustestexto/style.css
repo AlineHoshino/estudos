@@ -1,0 +1,16 @@
+p {
+  color:red;
+  text-align: justify;
+  text-transform: capitalize;
+  text-indent: 35px;
+  text-decoration: underline overline;
+  letter-spacing: -2px;
+  line-height: 3;
+  word-spacing: 5px;
+}
+
+/* text-transform: uppercase, lowercase, capitalize
+Capitalize faz ficar a 1 letra maiúscula em tudo 
+Dar uma identação para nosso parágrafo text-indent
+text-decoration: underline, overline line-through
+line-heigth: altura da fonte se colocar 3 é 3vezes o tamanho da fonte */
