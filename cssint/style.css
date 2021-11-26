@@ -1,0 +1,29 @@
+#container{
+  color:yellow;
+  background-color: blue;
+  width: 300px;
+  height: 100px;
+  overflow-y:scroll;
+}
+
+/* overflow:visible ve como esta, se tiver conteudo passando vai mostarr passando 
+usando o overflow:hidden toda parte do nosso conteudo que passar do container esconde
+Mas, às vezes voce quer ver todo o conteudo, use o scroll
+overflow:auto põe o scroll só onde precisa
+Outro jeito overflow-y:scroll*/
+
+
+.quadrado {
+ width: 50px;
+ height: 50px;
+ background-color: blue;
+ margin-left:auto;
+}
+
+img {
+  margin:auto;
+}
+/* margin auto equilibra entre os lados dandoo efeito de centralizado
+margin-left:auto manda nosso componente lá para a direita */
+
+/* img margin auto 
