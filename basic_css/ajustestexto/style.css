@@ -1,0 +1,50 @@
+p {
+  color:red;
+  text-align: justify;
+  text-transform: capitalize;
+  text-indent: 35px;
+  text-decoration: underline overline;
+  letter-spacing: -2px;
+  line-height: 3;
+  word-spacing: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* text-transform: uppercase, lowercase, capitalize
+Capitalize faz ficar a 1 letra maiúscula em tudo 
+Dar uma identação para nosso parágrafo text-indent
+text-decoration: underline, overline line-through
+line-heigth: altura da fonte se colocar 3 é 3vezes o tamanho da fonte */
+
+.ola{
+  font-family: xablau, "Comic Sans MS";
+  font-style: italic;
+  font-size: 12px;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+a{
+  text-decoration: none;
+  color:red;
+  cursor:crosshair;
+  background: aquamarine;
+  padding: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius:10px;
+}
+
+a:visited{
+  color:blueviolet;
+}
+
+a:hover{
+  background: chocolate;
+}
+/* font family se for mais de uma palavra eu preciso colocar aspas, se a 1 fonte nao existe ja poe outra de reserva
+font-variant: small-caps letras minusculas ficam maiusculas, mas ainda são menores que as letras que iniciam as frases e que são orginalmente maiúsculas
+hover quando passa mouse por cima
+a:active - quando clica fica com background da cor que escolhe
+4 estados do link:o padrao do link é link, hover, active e visited
+*/

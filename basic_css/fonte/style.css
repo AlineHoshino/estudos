@@ -1,0 +1,20 @@
+p {
+  font-family: 'Puppies Play', cursive;
+  font-size: 40px;
+}
+
+h1 {
+  font-family: 'myFont';
+}
+
+@font-face {
+  font-family: myFont;
+  src: url(./fonteface/KasarinlanBaybayinFont-Regular.ttf);
+}
+
+/* font-family pega do google fonts o link e depois coloca font-family no style.css 
+Baixar fontes diferents nosso navegador aceita otf e ttf 
+No w3schools fontface ve qual navegador suporta qual extensao de fonte, e também é onde tem o código do font-face
+dou um nome para minha fonte e seleciono onde está no src
+depois coloco esse nome da fonte no font-family
+Quer várias fontes diferentes faça vários font-face*/
