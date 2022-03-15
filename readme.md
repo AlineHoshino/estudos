@@ -1,5 +1,2 @@
-
-Revisando conteúdos
-
-Pasta que estou revisando conteúdos aprendidos
+Este repositório contém meus estudos no site programadorBr
 

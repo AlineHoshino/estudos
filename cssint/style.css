@@ -20,10 +20,41 @@ Outro jeito overflow-y:scroll*/
  margin-left:auto;
 }
 
-img {
-  margin:auto;
+.container {
+  text-align: center;
+}
+
+
+.quadro {
+  width: 500px;
+  height:4000px;
+  border:1px solid black;
+  position: relative;
+}
+.square {
+  width:100px;
+  height:100px;
+}
+.squareBlue {
+  background-color: blue;;
+}
+
+.squareRed {
+  background-color: red;
+  position: sticky;
+  top:0px; 
+  left:300px;
+}
+
+.squareGreen{
+  background-color: green;
 }
 /* margin auto equilibra entre os lados dandoo efeito de centralizado
 margin-left:auto manda nosso componente lá para a direita */
 
-/* img margin auto 
+/* img margin auto não vai para o centro, solução colocar display block 
+mas, e se o elemento precisa ser inline block, ou inline coloca dentro de uma div*/
+
+/* position relative mexe só nesse elemento e o relativo é em relação a  posição inicial dele */
+
+/* position fixed é em relação a view port, 
