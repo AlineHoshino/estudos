@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Video</title>
+</head>
+<body>
+<!-- <video width="200" controls muted loop  src='./malta.mp4' poster="./turtle.jpeg" ></video> -->
+<div class="container">
+  <video id="video1" class="video" src="./malta.mp4">
+
+  </video >
+  <div class="controle" >
+    <img class="btn" onclick="retroceder()"src='./img/skip-back-button.png'>
+    <img class="btn" onclick="avancar()"src="img/next.png">
+    <img class="btn" onclick="diminuir_vel()"src="./img/minimize.png">
+    <img class="btn" onclick="aumentar_vel()"onclick="retroceder()"src="./img/plus.png">
+    <img class="btn" onclick="play()"src="./img/botao-play.png">
+    <img class="btn" onclick="stop()"src="./img/stop.png">
+  </div>
+</div>
+  <script src='script.js'></script>
+</body>
+</html>
