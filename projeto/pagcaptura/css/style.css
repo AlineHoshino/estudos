@@ -25,3 +25,73 @@ header{
 section {
   color:white;
 }
+
+.formContainer{
+  max-width:230px;
+  background-color: #FFFFFFBB;
+  float:right;
+  padding:20px;
+} 
+
+h2 {
+  font-size:16px;
+}
+
+.mb {
+  margin-bottom: 15px;
+}
+
+input,select {
+  width:100%;
+  box-sizing: border-box;
+  padding:10px;
+  border:none;
+  margin-bottom: 10px;
+}
+
+input[type="submit"]{
+  color:white;
+  background-color: cadetblue;
+  font-weight: bold;
+}
+
+section{
+  padding:20px;
+  background-image: url('../images/people.jpg');
+  background-size: cover;
+  overflow: hidden;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('../images/arrow.jpg');
+  background-repeat: no-repeat;
+  background-position:calc(100% - 10px) center;
+}
+footer{
+  background-color: rgb(43, 42, 42);
+  padding:40px;
+  text-align: center;
+}
+
+.picture{
+  width:160px;
+}
+
+.description{
+  display:inline-block;
+  color:white;
+  max-width: 40%;
+  margin-left: 40px;
+  text-align: left;
+}
+
+.description p, .description h3 {
+  margin-bottom: 20px;
+}
+
+.description h3 {
+  font-size:24px;
+}

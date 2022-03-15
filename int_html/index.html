@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form method="GET" action="/cadastro">
+    <input type="text" name="email">
+    <input type="password" >
+    <input tyoe="text" name="nome">
+    <input type="submit" value="Enviar">
+    <input type="radio" name="gender"> Feminino
+    <input type="radio" name="gender"> Masculino
+    <input type="reset" value="limpar">
+    <select name="estado" size="3">
+      <option name="RJ">Rio de Janeiro</option>
+      <option name="SP" selected >São Paulo</option>
+      <option name="RJ">Rio de Janeiro</option>
+      <option name="SP" selected >São Paulo</option>
+      <option name="RJ">Rio de Janeiro</option>
+      <option name="SP" selected >São Paulo</option>
+    </select>
+    <input type="color" name="cor">
+    <input type="date" name="data" max="2021-01-20">
+    <input type="datetime-local" name="hora">
+    <input type="range" min="5" max="10"> 
+  </form>
+</body>
+</html>
+
+<!-- No input do tipo checkbox precisa pro um value senao ficaria assim name="curso" on e como são varios checkbox preciso saber qual foi marcado -->
+<!-- no radio tem de ter o mesmo nome para que ao selecionar um o outro seja desmarcado, se tiver nomes diferentes posso marcar os dois -->
+<!-- passando value limpar e value enviar fica esses textos escritos nos botões de reset e submit -->

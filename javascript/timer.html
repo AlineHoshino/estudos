@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    let numero =0;
+    let interval;// começa indefinida
+    // function mudarCor(){
+    //   let h = document.getElementsByTagName("h1")[0]
+    //   h.style.color="blue"
+    // }
+    function atualizarText(){
+      h1=document.getElementsByTagName("h1")[0]
+      h1.innerHTML+=" " + numero
+      numero++
+    }
+    function iniciar(){
+    //   let h = document.getElementsByTagName("h1")[0]
+    //   h.innerHTML= "Novo titulo" 
+      //setTimeout(mudarCor,1000)
+      interval=setInterval(atualizarText,3000)// aqui recebe o intervalo
+    }
+
+    function parar(){
+      clearInterval(interval)
+    }
+
+  </script>
+</head>
+<body>
+  <h1>Título</h1>
+  <input type="submit" value="iniciar" onclick="iniciar()">
+  <input type="button" value="parar" onclick="parar()">
+</body>
+</html>

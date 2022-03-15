@@ -1,0 +1,24 @@
+img{
+  float:left;
+}
+
+p{
+  clear:none;
+}
+/* float flutuando em relação ao pŕoximo elemento 
+clear: both, não quero ngm flutuando de nenhum lado*/
+
+#border {
+  border:1px solid black ;
+  overflow:auto;
+}
+
+li {
+  float:left;
+  list-style: none;
+  padding: 10px;
+  background-color: tomato;
+  margin:5px;
+}
+
+/*Se puser uma div em volta como o texto é menor que a imagem a borda nao pega utdo corrigi isso com overflow*/

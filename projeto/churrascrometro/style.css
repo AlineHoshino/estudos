@@ -1,0 +1,29 @@
+* {
+  margin:0;
+  padding:0;
+}
+
+img {
+  width:50%;
+  float:left;
+}
+
+input,button{
+  width:80%;
+  display:block;
+  box-sizing: border-box;
+  margin:auto;
+}
+
+.container{
+  width:40%;
+  background-color: blue;
+  float: right;
+  margin-right: 30px;
+  padding:20px
+}
+
+h1:hover{
+  color:red;
+  visibility: visible;
+}
