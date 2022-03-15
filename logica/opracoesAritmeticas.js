@@ -25,3 +25,14 @@ console.log(`Divisão:2 / 4 = ${x}`)
 x = num1*num2
 
 console.log(`Multiplicação: 2*4 = ${x}`)
+
+// Elaborar um programa que leia o valor de um jantar . Calcula a taxa do garçom e o valor total a ser pago
+
+  let janta = 80;
+  let taxa = (janta * 0.1);
+  let total = janta + taxa;
+
+
+console.log(`Valor do jantar: R$${janta},00`);
+console.log(`Taxa do garçom: R$${taxa},00`);
+console.log(`Total a pagar: R$${total},00`);
