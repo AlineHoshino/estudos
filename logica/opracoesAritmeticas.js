@@ -43,13 +43,41 @@ var list1 = [
   { firstName: 'Emma', lastName: 'B.', country: 'Norway', continent: 'Europe', age: 19, language: 'Clojure' }
 ];
 
-function getFirstPython(list1){
-const existDevPython =list1.find(dev => dev.language === 'Python')
-if(existDevPython){    
-return `${existDevPython.firstName}, ${existDevPython.country}`
-}else {
-    return `There will be no Python developers`
-  }
-}
+var list = [
+  { firstName: 'Noah', lastName: 'M.', country: 'Switzerland', continent: 'Europe', age: 19, language: 'C' },
+  { firstName: 'Anna', lastName: 'R.', country: 'Liechtenstein', continent: 'Europe', age: 52, language: 'JavaScript' },
+  { firstName: 'Ramon', lastName: 'R.', country: 'Paraguay', continent: 'Americas', age: 29, language: 'Ruby' },
+  { firstName: 'George', lastName: 'B.', country: 'England', continent: 'Europe', age: 81, language: 'C' },
+];
 
-console.log(getFirstPython(list1))
+function countLanguages(list) {
+  var result = {}
+  for(var i=0;i<list.length;i++){
+    if(result[list[i].language]==undefined){
+      result[list[i].language]=1
+      } else {
+      result[list[i].language]++
+      }
+     } 
+  return result
+}
+console.log(countLanguages(list))
+
+function getFirstPython(list1){
+  const existDevPython =list1.find(dev => dev.language === 'Python')
+  if(existDevPython){    
+  return `${existDevPython.firstName}, ${existDevPython.country}`
+  }else {
+      return `There will be no Python developers`
+    }
+  }
+
+  const obj ={
+
+  }
+
+if(obj['name'] === undefined)[
+      obj['name'] ='Aline'
+]
+
+  console.log(obj)
