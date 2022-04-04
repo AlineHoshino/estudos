@@ -36,3 +36,20 @@ console.log(`Multiplicação: 2*4 = ${x}`)
 console.log(`Valor do jantar: R$${janta},00`);
 console.log(`Taxa do garçom: R$${taxa},00`);
 console.log(`Total a pagar: R$${total},00`);
+
+var list1 = [
+  { firstName: 'Mark', lastName: 'G.', country: 'Scotland', continent: 'Europe', age: 22, language: 'JavaScript' },
+  { firstName: 'Victoria', lastName: 'T.', country: 'Puerto Rico', continent: 'Americas', age: 30, language: 'Pythonss' },
+  { firstName: 'Emma', lastName: 'B.', country: 'Norway', continent: 'Europe', age: 19, language: 'Clojure' }
+];
+
+function getFirstPython(list1){
+const existDevPython =list1.find(dev => dev.language === 'Python')
+if(existDevPython){    
+return `${existDevPython.firstName}, ${existDevPython.country}`
+}else {
+    return `There will be no Python developers`
+  }
+}
+
+console.log(getFirstPython(list1))
