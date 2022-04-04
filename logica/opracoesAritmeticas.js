@@ -65,7 +65,7 @@ console.log(countLanguages(list))
 
 function getFirstPython(list1){
   const existDevPython =list1.find(dev => dev.language === 'Python')
-  if(existDevPython){    
+  if(existDevPython){
   return `${existDevPython.firstName}, ${existDevPython.country}`
   }else {
       return `There will be no Python developers`
@@ -135,3 +135,31 @@ var list6 = [
 // console.log(findSenior(list6))
 
 // vi esse código no codewars e achei legal a resolução 
+
+const closestMultiple10 = num => {
+  let result = num/10;
+  const round = Math.round(result)
+  const roundMultipy10 = round *10
+  return roundMultipy10
+};
+
+console.log(closestMultiple10(54))
+
+function howManyDalmations(number){
+  
+  var dogs = ["Hardly any", "More than a handful!" , "Woah that's a lot of dogs!" , "101 DALMATIONS!!!"];
+ if(number === 1){
+   return dogs[0]
+ }
+if(number >1 &&  number<=50){
+  return dogs[1]
+}
+  if(number >51 && number<101){
+    return dogs[2]
+  }
+  else{
+    return dogs[3]
+  }
+}
+
+console.log(howManyDalmations(100))
