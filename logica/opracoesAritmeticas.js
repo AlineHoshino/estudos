@@ -128,6 +128,11 @@ var list6 = [
   { firstName: 'Sou', lastName: 'B.', country: 'Japan', continent: 'Asia', age: 49, language: 'PHP' },
 ];
 
+function findSenior3(list6){
+  return list6[list6.findIndex((person) => person === Math.max(...list6.map(person => person.age)) )]
+}
+// só encontra um dev
+
 // function findSenior(list6) {
 //   var maxAge = Math.max(...list6.map(person => person.age));
 //   return list6.filter(person => person.age === maxAge);
@@ -163,3 +168,48 @@ if(number >1 &&  number<=50){
 }
 
 console.log(howManyDalmations(100))
+
+
+var list7 = [
+  { firstName: 'Harry', lastName: 'K.', country: 'Brazil', continent: 'Americas', age: 19, language: 'Python' },
+  { firstName: 'Kseniya', lastName: 'T.', country: 'Belarus', continent: 'Europe', age: 29, language: 'JavaScript' },
+  { firstName: 'Jing', lastName: 'X.', country: 'China', continent: 'Asia', age: 39, language: 'Ruby' },
+  { firstName: 'Noa', lastName: 'A.', country: 'Israel', continent: 'Asia', age: 40, language: 'Ruby' },
+  { firstName: 'Andrei', lastName: 'E.', country: 'Romania', continent: 'Europe', age: 59, language: 'C' },
+  { firstName: 'Maria', lastName: 'S.', country: 'Peru', continent: 'Americas', age: 60, language: 'C' },
+  { firstName: 'Lukas', lastName: 'X.', country: 'Croatia', continent: 'Europe', age: 75, language: 'Python' },
+  { firstName: 'Chloe', lastName: 'K.', country: 'Guernsey', continent: 'Europe', age: 88, language: 'Ruby' },
+  { firstName: 'Viktoria', lastName: 'W.', country: 'Bulgaria', continent: 'Europe', age: 98, language: 'PHP' },
+  { firstName: 'Piotr', lastName: 'B.', country: 'Poland', continent: 'Europe', age: 128, language: 'JavaScript' }
+];
+
+function isAgeDiverse(list7){
+  let bool = true;
+  for(let i= 0; i < list7.length; i ++){
+    if(list7[i]['age'] > 10 && list7[i]['age'] < 20 ){
+      bool = false;
+    }
+  }
+  if( bool){
+    return false;
+  }
+  bool = true;
+  for(let i= 0; i < list7.length; i ++){
+    if(list7[i]['age'] >= 20 && list7[i]['age'] < 30 ){
+      bool = false;
+    }
+  }
+  if( bool){
+    return false;
+  }
+  bool = true;
+  for(let i= 0; i < list7.length; i ++){
+    if(list7[i]['age'] >= 30 && list7[i]['age'] < 40 ){
+      bool = false;
+    }
+  }
+  if( bool){
+    return false;
+  }
+  return true;
+}
