@@ -49,3 +49,133 @@ function isAgeDiverse(list7){
   
 
    console.log(find_max([1,2,3,4,5]))
+
+   function solution(str, ending){
+    return str.endsWith(ending)
+    
+  }
+
+  console.log(solution('abcde','abc'))
+
+  function gimme(triplet) {
+    const copyArray = [...triplet]
+    const order = copyArray.sort((a,b) => a -b)
+    const numberMiddle = order[1];
+    const index = triplet.indexOf(numberMiddle)
+    return index
+  }
+
+  console.log(gimme([2,1,3]))
+
+//   function removeEveryOther(arr){
+//     const array = []
+//   for(let i = 0; i< arr.length; i++){
+//     if(arr.length === 1){
+//       return arr
+//     }else{ 
+//      return  array.push(arr[i === (i%2 ===0)])
+//     }
+//   }
+//   }
+
+//  console.log(removeEveryOther([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+
+function findMultiples(integer, limit) {
+  const qtyLoops = Math.floor(limit/integer)
+  const array = []
+  for( let i = 1; i <= qtyLoops; i++){
+    array.push(integer*i)
+  }
+  return array
+}
+
+console.log(findMultiples(4,27))
+
+function areYouPlayingBanjo(name) {
+  if(name.startsWith('R') || name.startsWith('r')){
+    return name + ' plays banjo'
+  }else {
+    return name + ' does not play banjo'
+  }
+}
+
+function areYouPlayingBanjo2(name) {
+  return name + (name[0].toLowerCase() == 'r' ? ' plays' : ' does not play') + " banjo";
+}
+
+console.log(areYouPlayingBanjo2('Ronald'))
+
+function stickyCalc (operation, val1, val2){
+  const roundVal1 = Math.round(val1)
+  const roundVal2 = Math.round(val2)
+  const valString =roundVal1.toString()
+  const val2String = roundVal2.toString()
+  const concatString = valString +val2String
+  console.log(concatString,'aqui')
+switch(operation){
+  case '+':
+    return Number(concatString) + val2;
+    break;
+  case '-':
+    return Number(concatString) - val2;
+    break;
+  case '*':
+    return Number(concatString) * val2;
+    break;
+  case '/':
+    return Math.round(Number(concatString) / val2);
+    break;
+    default:
+      console.log('sorry')
+}
+}
+
+
+console.log(stickyCalc('/',433,930))
+
+function betterThanAverage(classPoints, yourPoints) {
+ const soma = classPoints.reduce((acc, curr) => (acc + curr)) 
+ if(soma/classPoints.length > yourPoints){
+   return false;
+ }
+ return true;
+}
+
+
+console.log(betterThanAverage([100, 40, 34, 57, 29, 72, 57, 88], 75))
+
+
+function stringMerge(string1, string2, letter){
+  const split = string1. split('')
+  const indice = split.indexOf(letter)
+  const firtsPart =  split.slice(0,(indice))
+  const split2 = string2.split('')
+  const indice2 = split2.indexOf(letter)
+  const final =  string2.substring(indice2, split2.length)
+  const FirstPartString = firtsPart.join('').toString();
+  const 
+  const palavra = FirstPartString + final
+  return palavra;
+}
+
+stringMergeSolution= (a, b, l) => a.slice(0, a.indexOf(l)) + b.slice(b.indexOf(l));
+console.log((stringMergeSolution("person","here",'e')));
+
+
+function sum(...args) {
+  const array = [...args]
+  return array.reduce((a,b) => a+b,0)
+}
+
+console.log((sum(12, 1, 1, 1, 1, 1, 1)))
+
+
+function sum2() {
+  var total = 0;
+  for(var i in arguments){
+    total += arguments[i];
+  }
+  return total;
+}
+
+console.log(sum2(12, 1, 1, 1, 1, 1, 1))

@@ -128,10 +128,6 @@ var list6 = [
   { firstName: 'Sou', lastName: 'B.', country: 'Japan', continent: 'Asia', age: 49, language: 'PHP' },
 ];
 
-function findSenior3(list6){
-  return list6[list6.findIndex((person) => person === Math.max(...list6.map(person => person.age)) )]
-}
-// só encontra um dev
 
 // function findSenior(list6) {
 //   var maxAge = Math.max(...list6.map(person => person.age));
@@ -213,3 +209,20 @@ function isAgeDiverse(list7){
   }
   return true;
 }
+
+function longest(words) {
+const biggestworld = words.map(w => w.length)
+console.log(biggestworld)
+return NumberBiggestWorld = Math.max(...biggestworld)
+}
+
+console.log(longest(['simple', 'is', 'better', 'than', 'complex']))
+
+function sortByBinaryOnes(list){
+  const binary =list.map(num => num.toString(2))
+  const sortBinary = binary.sort((a,b) => {
+    if()
+  })
+  console.log(sortBinary)
+}
+console.log(sortByBinaryOnes([1,15,5,7,3]))
