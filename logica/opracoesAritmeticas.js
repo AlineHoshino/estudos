@@ -219,10 +219,74 @@ return NumberBiggestWorld = Math.max(...biggestworld)
 console.log(longest(['simple', 'is', 'better', 'than', 'complex']))
 
 function sortByBinaryOnes(list){
+   list.sort((a,b) => a -b)
   const binary =list.map(num => num.toString(2))
-  const sortBinary = binary.sort((a,b) => {
-    if()
+  binary.sort((a,b) => {
+    if(a.length > b.length){ 
+      return 1
+    }
+    if(a.length < b.length){
+      return -1
+    }
+    return 0
   })
-  console.log(sortBinary)
+  const seila = binary.sort((a,b)=> {
+    const quant1a = a.split('').filter(e => e === "1").length
+    const quant1b = b.split('').filter(e => e === "1").length
+    if(quant1a > quant1b) {
+      return -1
+    }
+    if(quant1a < quant1b) {
+      return 1
+    }
+    return 0
+  })
+  return seila.map(e => parseInt(e,2))
 }
 console.log(sortByBinaryOnes([1,15,5,7,3]))
+
+
+const sortByBinaryOnes2 = (list) => list
+  .sort((a,b) =>  a.toString(2).length > b.toString(2).length ? 1 : a.toString(2).length < b.toString(2).length? -1: a-b)
+  .sort((a,b)=> {
+   const quant1a = a.toString(2).replace(/0/g,'').length
+   const quant1b = b.toString(2).replace(/0/g,'').length
+   return quant1a > quant1b ? -1: quant1a < quant1b? 1:0
+ })
+console.log(sortByBinaryOnes2([1,15,5,7,3]))
+
+const a = "101010101"
+const b = a.split('').filter(e => e === "1").length
+
+function solution(number) {
+  const arr =[]
+  if(number < 0){
+    return 0
+  }
+  for(let i = 1; i <number ; i ++){
+    if(i % 3 === 0 || i % 5 === 0){
+      arr.push(i)
+    }
+  }
+  return arr.reduce((a,b) => a +b,0)
+}
+
+console.log(solution(10))
+
+function squareSum(numbers){
+  if(numbers === []){
+return 0
+}else{
+const numberless0 = numbers.filter(n => n !==0)
+const array = numberless0.map(n => n**2)
+return array.reduce((a,b)=> a + b,0)
+}
+}
+
+console.log(squareSum([]))
+
+function makeNegative(num) {
+  if(num >0 ) return -Math.abs(num)
+  else return num
+ }
+ console.log(makeNegative(0))

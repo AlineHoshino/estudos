@@ -67,18 +67,24 @@ function isAgeDiverse(list7){
 
   console.log(gimme([2,1,3]))
 
-//   function removeEveryOther(arr){
-//     const array = []
-//   for(let i = 0; i< arr.length; i++){
-//     if(arr.length === 1){
-//       return arr
-//     }else{ 
-//      return  array.push(arr[i === (i%2 ===0)])
-//     }
-//   }
-//   }
+  function removeEveryOther(arr){
+    const array = []
+  for(let i = 0; i< arr.length; i++){
+    if(i%2 === 0){
+      array.push(arr[i])
+    }
+  }
+    return array
+  }
 
-//  console.log(removeEveryOther([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+ console.log(removeEveryOther([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+
+ function removeEveryOther2(arr) {
+   return arr.filter((elem, i) => i%2 === 0)
+ }
+
+
+ console.log(removeEveryOther([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 
 function findMultiples(integer, limit) {
   const qtyLoops = Math.floor(limit/integer)
@@ -153,7 +159,6 @@ function stringMerge(string1, string2, letter){
   const indice2 = split2.indexOf(letter)
   const final =  string2.substring(indice2, split2.length)
   const FirstPartString = firtsPart.join('').toString();
-  const 
   const palavra = FirstPartString + final
   return palavra;
 }
@@ -163,8 +168,7 @@ console.log((stringMergeSolution("person","here",'e')));
 
 
 function sum(...args) {
-  const array = [...args]
-  return array.reduce((a,b) => a+b,0)
+  return args.reduce((a,b) => a+b,0)
 }
 
 console.log((sum(12, 1, 1, 1, 1, 1, 1)))
@@ -172,6 +176,7 @@ console.log((sum(12, 1, 1, 1, 1, 1, 1)))
 
 function sum2() {
   var total = 0;
+  console.log(arguments)
   for(var i in arguments){
     total += arguments[i];
   }
