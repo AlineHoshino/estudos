@@ -1,26 +1,3 @@
-function exibir (result, puzzle, tentativa) {
-    const resultContainer = document.getElementById('result')
-    const card = document.getElementById('card')
-    const tent = document.getElementById('tentativa')
-  
-    result.forEach(arr => {
-      resultContainer.innerText += `${arr.join(' ')}\n`
-    })
-  
-    resultContainer.innerText += '--------------------\n\n'
-  
-    puzzle.forEach(arr => {
-      card.innerText += `${arr.join(' ')}\n`
-    })
-  
-    card.innerText += '--------------------\n\n'
-  
-    tentativa.forEach(arr => {
-      tent.innerText += `${arr.join(' ')}\n`
-    })
-  
-    tent.innerText += '--------------------\n\n'
-  }
 
 
   function validSolution(board){
