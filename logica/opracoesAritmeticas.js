@@ -290,3 +290,33 @@ function makeNegative(num) {
   else return num
  }
  console.log(makeNegative(0))
+
+//  function vowelIndices(word){
+//   const vowels = ['a','e','i','o','u']
+//   const wordSplit = word.split('')
+//   const FindIndexVowel = wordSplit.filter((w,i) => indexOf(w) === vowels[i])
+//   return FindIndexVowel
+// }
+
+// console.log(vowelIndices('abacaxi'))
+
+const frutas =['banana','maca']
+const [fruta1] = frutas;
+
+console.log(fruta1)
+
+// const unusedDigits = (...arr) => {
+//   var digits = arr.join();
+// console.log(digits)
+//   return [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+//     .filter(x => !digits.includes(x))
+// }; código codewars
+
+console.log(unusedDigits([36,2015]))
+
+
+const verify=(string) =>{
+  return [1,2].filter(n=> string.includes(n)).join('')
+}
+
+console.log(verify('1diqjsijqwoj2'))
