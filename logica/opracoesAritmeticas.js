@@ -128,6 +128,7 @@ var list6 = [
   { firstName: 'Sou', lastName: 'B.', country: 'Japan', continent: 'Asia', age: 49, language: 'PHP' },
 ];
 
+
 // function findSenior(list6) {
 //   var maxAge = Math.max(...list6.map(person => person.age));
 //   return list6.filter(person => person.age === maxAge);
@@ -163,3 +164,159 @@ if(number >1 &&  number<=50){
 }
 
 console.log(howManyDalmations(100))
+
+
+var list7 = [
+  { firstName: 'Harry', lastName: 'K.', country: 'Brazil', continent: 'Americas', age: 19, language: 'Python' },
+  { firstName: 'Kseniya', lastName: 'T.', country: 'Belarus', continent: 'Europe', age: 29, language: 'JavaScript' },
+  { firstName: 'Jing', lastName: 'X.', country: 'China', continent: 'Asia', age: 39, language: 'Ruby' },
+  { firstName: 'Noa', lastName: 'A.', country: 'Israel', continent: 'Asia', age: 40, language: 'Ruby' },
+  { firstName: 'Andrei', lastName: 'E.', country: 'Romania', continent: 'Europe', age: 59, language: 'C' },
+  { firstName: 'Maria', lastName: 'S.', country: 'Peru', continent: 'Americas', age: 60, language: 'C' },
+  { firstName: 'Lukas', lastName: 'X.', country: 'Croatia', continent: 'Europe', age: 75, language: 'Python' },
+  { firstName: 'Chloe', lastName: 'K.', country: 'Guernsey', continent: 'Europe', age: 88, language: 'Ruby' },
+  { firstName: 'Viktoria', lastName: 'W.', country: 'Bulgaria', continent: 'Europe', age: 98, language: 'PHP' },
+  { firstName: 'Piotr', lastName: 'B.', country: 'Poland', continent: 'Europe', age: 128, language: 'JavaScript' }
+];
+
+function isAgeDiverse(list7){
+  let bool = true;
+  for(let i= 0; i < list7.length; i ++){
+    if(list7[i]['age'] > 10 && list7[i]['age'] < 20 ){
+      bool = false;
+    }
+  }
+  if( bool){
+    return false;
+  }
+  bool = true;
+  for(let i= 0; i < list7.length; i ++){
+    if(list7[i]['age'] >= 20 && list7[i]['age'] < 30 ){
+      bool = false;
+    }
+  }
+  if( bool){
+    return false;
+  }
+  bool = true;
+  for(let i= 0; i < list7.length; i ++){
+    if(list7[i]['age'] >= 30 && list7[i]['age'] < 40 ){
+      bool = false;
+    }
+  }
+  if( bool){
+    return false;
+  }
+  return true;
+}
+
+function longest(words) {
+const biggestworld = words.map(w => w.length)
+console.log(biggestworld)
+return NumberBiggestWorld = Math.max(...biggestworld)
+}
+
+console.log(longest(['simple', 'is', 'better', 'than', 'complex']))
+
+function sortByBinaryOnes(list){
+   list.sort((a,b) => a -b)
+  const binary =list.map(num => num.toString(2))
+  binary.sort((a,b) => {
+    if(a.length > b.length){ 
+      return 1
+    }
+    if(a.length < b.length){
+      return -1
+    }
+    return 0
+  })
+  const seila = binary.sort((a,b)=> {
+    const quant1a = a.split('').filter(e => e === "1").length
+    const quant1b = b.split('').filter(e => e === "1").length
+    if(quant1a > quant1b) {
+      return -1
+    }
+    if(quant1a < quant1b) {
+      return 1
+    }
+    return 0
+  })
+  return seila.map(e => parseInt(e,2))
+}
+console.log(sortByBinaryOnes([1,15,5,7,3]))
+
+
+const sortByBinaryOnes2 = (list) => list
+  .sort((a,b) =>  a.toString(2).length > b.toString(2).length ? 1 : a.toString(2).length < b.toString(2).length? -1: a-b)
+  .sort((a,b)=> {
+   const quant1a = a.toString(2).replace(/0/g,'').length
+   const quant1b = b.toString(2).replace(/0/g,'').length
+   return quant1a > quant1b ? -1: quant1a < quant1b? 1:0
+ })
+console.log(sortByBinaryOnes2([1,15,5,7,3]))
+
+const a = "101010101"
+const b = a.split('').filter(e => e === "1").length
+
+function solution(number) {
+  const arr =[]
+  if(number < 0){
+    return 0
+  }
+  for(let i = 1; i <number ; i ++){
+    if(i % 3 === 0 || i % 5 === 0){
+      arr.push(i)
+    }
+  }
+  return arr.reduce((a,b) => a +b,0)
+}
+
+console.log(solution(10))
+
+function squareSum(numbers){
+  if(numbers === []){
+return 0
+}else{
+const numberless0 = numbers.filter(n => n !==0)
+const array = numberless0.map(n => n**2)
+return array.reduce((a,b)=> a + b,0)
+}
+}
+
+console.log(squareSum([]))
+
+function makeNegative(num) {
+  if(num >0 ) return -Math.abs(num)
+  else return num
+ }
+ console.log(makeNegative(0))
+
+//  function vowelIndices(word){
+//   const vowels = ['a','e','i','o','u']
+//   const wordSplit = word.split('')
+//   const FindIndexVowel = wordSplit.filter((w,i) => indexOf(w) === vowels[i])
+//   return FindIndexVowel
+// }
+
+// console.log(vowelIndices('abacaxi'))
+
+const frutas =['banana','maca']
+const [fruta1] = frutas;
+
+console.log(fruta1)
+
+// const unusedDigits = (...arr) => {
+//   var digits = arr.join();
+// console.log(digits)
+//   return [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+//     .filter(x => !digits.includes(x))
+// }; código codewars
+
+console.log(unusedDigits([36,2015]))
+
+
+const verify=(string) =>{
+  return [1,2].filter(n=> string.includes(n)).join('')
+}
+
+console.log(verify('1diqjsijqwoj2'))
